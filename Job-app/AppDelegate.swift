@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Job-app
 //
-//  Created by Square Infosoft on 08/03/22.
+//  Created by MAC on 08/03/22.
 //
 
 import UIKit
