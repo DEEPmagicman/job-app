@@ -13,6 +13,7 @@
 		2989C5E927D7BAF90067B38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2989C5E727D7BAF90067B38A /* Main.storyboard */; };
 		2989C5EB27D7BAFB0067B38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2989C5EA27D7BAFB0067B38A /* Assets.xcassets */; };
 		2989C5EE27D7BAFB0067B38A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2989C5EC27D7BAFB0067B38A /* LaunchScreen.storyboard */; };
+		2989C5F827D7C1A70067B38A /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2989C5F727D7C1A70067B38A /* Poppins-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2989C5EA27D7BAFB0067B38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2989C5ED27D7BAFB0067B38A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2989C5EF27D7BAFB0067B38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2989C5F727D7C1A70067B38A /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		2989C5E027D7BAF90067B38A /* Job-app */ = {
 			isa = PBXGroup;
 			children = (
+				2989C5F527D7C16B0067B38A /* Assets */,
 				2989C5E127D7BAF90067B38A /* AppDelegate.swift */,
 				2989C5E327D7BAF90067B38A /* SceneDelegate.swift */,
 				2989C5E527D7BAF90067B38A /* ViewController.swift */,
 				2989C5E727D7BAF90067B38A /* Main.storyboard */,
-				2989C5EA27D7BAFB0067B38A /* Assets.xcassets */,
 				2989C5EC27D7BAFB0067B38A /* LaunchScreen.storyboard */,
 				2989C5EF27D7BAFB0067B38A /* Info.plist */,
 			);
 			path = "Job-app";
+			sourceTree = "<group>";
+		};
+		2989C5F527D7C16B0067B38A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2989C5F627D7C17F0067B38A /* Fonts */,
+				2989C5EA27D7BAFB0067B38A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2989C5F627D7C17F0067B38A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2989C5F727D7C1A70067B38A /* Poppins-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2989C5EE27D7BAFB0067B38A /* LaunchScreen.storyboard in Resources */,
+				2989C5F827D7C1A70067B38A /* Poppins-Medium.ttf in Resources */,
 				2989C5EB27D7BAFB0067B38A /* Assets.xcassets in Resources */,
 				2989C5E927D7BAF90067B38A /* Main.storyboard in Resources */,
 			);
