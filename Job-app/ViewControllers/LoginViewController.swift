@@ -1,0 +1,16 @@
+//
+//  LoginViewController.swift
+//  Job-app
+//
+//  Created by MAC on 09/03/22.
+//
+
+import UIKit
+
+class LoginViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+}

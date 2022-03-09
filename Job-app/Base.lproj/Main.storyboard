@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybj-qD-5Yf">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -22,14 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-Gu-BTa">
-                                <rect key="frame" x="51.5" y="144" width="311" height="311"/>
+                                <rect key="frame" x="51.5" y="188" width="311" height="311"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5Dd-Gu-BTa" secondAttribute="height" multiplier="1:1" id="3S0-uu-5Kt"/>
                                     <constraint firstAttribute="height" constant="311" id="pJV-g0-9h6"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JxE-UF-hyg">
-                                <rect key="frame" x="51.5" y="655" width="311" height="50"/>
+                                <rect key="frame" x="51.5" y="699" width="311" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb8-Mo-d02" customClass="PrimaryButton" customModule="Job_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="50"/>
@@ -50,6 +50,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onClickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYm-YL-3yC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkB-tB-rUJ" customClass="PrimaryButton" customModule="Job_app" customModuleProvider="target">
                                         <rect key="frame" x="163" y="0.0" width="148" height="50"/>
@@ -70,6 +73,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onClickRegistration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6z-hI-pqA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -87,21 +93,142 @@
                             <constraint firstItem="JxE-UF-hyg" firstAttribute="top" secondItem="5Dd-Gu-BTa" secondAttribute="bottom" constant="200" id="fsf-H1-4RC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Pai-9G-fbf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
+            <point key="canvasLocation" x="886.95652173913049" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y3P-0m-6On">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ybj-qD-5Yf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k8H-0h-lSi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KGJ-Xa-acW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cN5-HK-HMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="68"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="3BQ-VQ-YPd">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="njC-gY-Xho" customClass="LoginViewController" customModule="Job_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ph-D4-ehT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DreamJob" translatesAutoresizingMaskIntoConstraints="NO" id="GXo-13-TGE">
+                                <rect key="frame" x="51" y="104" width="312" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="07V-Qg-b2q"/>
+                                    <constraint firstAttribute="height" constant="208" id="kSZ-NE-1zM"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eup-EH-ClV" customClass="PrimaryButton" customModule="Job_app" customModuleProvider="target">
+                                <rect key="frame" x="132" y="686" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K2P-Gs-ypI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="PrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hG2-jB-44B"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="rQm-ma-8Ad">
+                                <rect key="frame" x="51" y="412" width="312" height="126"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-Fp-DKg">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sSa-Gh-EXj"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWT-8a-Tur">
+                                        <rect key="frame" x="0.0" y="76" width="312" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="vOc-k8-Pos"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yv2-rT-a9M"/>
+                        <color key="backgroundColor" name="PrimaryBackground"/>
+                        <constraints>
+                            <constraint firstItem="rQm-ma-8Ad" firstAttribute="trailing" secondItem="GXo-13-TGE" secondAttribute="trailing" id="6AT-Uc-uMr"/>
+                            <constraint firstItem="rQm-ma-8Ad" firstAttribute="leading" secondItem="GXo-13-TGE" secondAttribute="leading" id="9Wa-gA-S82"/>
+                            <constraint firstItem="rQm-ma-8Ad" firstAttribute="top" secondItem="GXo-13-TGE" secondAttribute="bottom" constant="100" id="FIE-Fq-HYX"/>
+                            <constraint firstItem="Yv2-rT-a9M" firstAttribute="bottom" secondItem="Eup-EH-ClV" secondAttribute="bottom" constant="126" id="Npz-z4-ulC"/>
+                            <constraint firstItem="Eup-EH-ClV" firstAttribute="centerX" secondItem="rQm-ma-8Ad" secondAttribute="centerX" id="PS1-xX-l3l"/>
+                            <constraint firstItem="GXo-13-TGE" firstAttribute="centerX" secondItem="4Ph-D4-ehT" secondAttribute="centerX" id="j1Q-Ax-7Ei"/>
+                            <constraint firstItem="Eup-EH-ClV" firstAttribute="leading" secondItem="Yv2-rT-a9M" secondAttribute="leading" constant="132" id="ofU-U5-LK2"/>
+                            <constraint firstItem="GXo-13-TGE" firstAttribute="top" secondItem="Yv2-rT-a9M" secondAttribute="top" constant="60" id="zOV-rc-0PG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDX-5q-YlW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LxC-Xd-6TN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="67.633928571428569"/>
         </scene>
     </scenes>
     <designables>
         <designable name="CkB-tB-rUJ">
             <size key="intrinsicContentSize" width="128" height="42"/>
         </designable>
+        <designable name="Eup-EH-ClV">
+            <size key="intrinsicContentSize" width="57" height="42"/>
+        </designable>
         <designable name="nb8-Mo-d02">
             <size key="intrinsicContentSize" width="57" height="42"/>
         </designable>
     </designables>
     <resources>
+        <image name="DreamJob" width="312" height="208"/>
         <image name="HomePage" width="311" height="311"/>
         <namedColor name="PrimaryBackground">
             <color white="0.41600000858306885" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
