@@ -20,7 +20,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func onClickRegistration(_ sender: Any) {
-        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: RegistrationViewController.self)) as! RegistrationViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
