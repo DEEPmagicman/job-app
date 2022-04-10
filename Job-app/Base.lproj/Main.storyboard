@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -353,49 +352,6 @@
             </objects>
             <point key="canvasLocation" x="2304" y="68"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="SWB-QF-jbm">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="dGl-Wk-FkW" customClass="HomeViewController" customModule="Job_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L62-8P-BAf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBB-vu-FX4">
-                                <rect key="frame" x="132" y="94" width="150" height="70"/>
-                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-GU-dbH">
-                                <rect key="frame" x="40" y="204" width="334" height="618"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="dGl-Wk-FkW" id="OfC-hp-seL"/>
-                                    <outlet property="delegate" destination="dGl-Wk-FkW" id="p11-EU-bDk"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pbU-oc-itn"/>
-                        <color key="backgroundColor" name="PrimaryBackground"/>
-                        <constraints>
-                            <constraint firstItem="bBB-vu-FX4" firstAttribute="top" secondItem="pbU-oc-itn" secondAttribute="top" constant="50" id="9W7-Zv-EiA"/>
-                            <constraint firstItem="bBB-vu-FX4" firstAttribute="centerX" secondItem="L62-8P-BAf" secondAttribute="centerX" id="LIp-Nr-DmH"/>
-                            <constraint firstItem="pbU-oc-itn" firstAttribute="bottom" secondItem="gMj-GU-dbH" secondAttribute="bottom" constant="40" id="eHX-73-fa5"/>
-                            <constraint firstItem="gMj-GU-dbH" firstAttribute="leading" secondItem="pbU-oc-itn" secondAttribute="leading" constant="40" id="fPf-g1-SVl"/>
-                            <constraint firstItem="gMj-GU-dbH" firstAttribute="centerX" secondItem="L62-8P-BAf" secondAttribute="centerX" id="kBG-Gy-YRf"/>
-                            <constraint firstItem="gMj-GU-dbH" firstAttribute="top" secondItem="bBB-vu-FX4" secondAttribute="bottom" constant="40" id="obs-Ue-kWc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Dt-Xa-2wT"/>
-                    <connections>
-                        <outlet property="tableView" destination="gMj-GU-dbH" id="6D4-Aj-Chv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rnK-JD-9RH" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3013" y="68"/>
-        </scene>
     </scenes>
     <designables>
         <designable name="CkB-tB-rUJ">
@@ -420,8 +376,5 @@
         <namedColor name="PrimaryColor">
             <color red="0.31799998879432678" green="0.70999997854232788" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

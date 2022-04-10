@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onClickLogin(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeViewController.self)) as! HomeViewController
+        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: String(describing: HomeTabBar.self)) as! HomeTabBar
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
