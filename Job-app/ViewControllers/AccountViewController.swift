@@ -31,7 +31,8 @@ class AccountViewController: UIViewController {
     }
     
     @objc private func onClickSetting(sender:UITapGestureRecognizer) {
-        
+        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: String(describing: SettingViewController.self)) as! SettingViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
