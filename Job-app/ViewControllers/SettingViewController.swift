@@ -13,11 +13,13 @@ class SettingViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
     }
+    
     @IBAction func onClickEdit(_ sender: Any) {
-        
+        let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: String(describing: UpdateViewController.self)) as! UpdateViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func onClickSignOut(_ sender: Any) {
-        
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
