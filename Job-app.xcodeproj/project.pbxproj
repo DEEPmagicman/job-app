@@ -20,6 +20,10 @@
 		29B2CE402802A26F00EC9C50 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B2CE3F2802A26F00EC9C50 /* CompanyCell.swift */; };
 		29B2CE422802ADF800EC9C50 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B2CE412802ADF800EC9C50 /* AccountViewController.swift */; };
 		29B2CE442802B14D00EC9C50 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B2CE432802B14D00EC9C50 /* SettingViewController.swift */; };
+		29B2CE462802B43700EC9C50 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29B2CE3B2802A0A100EC9C50 /* Poppins-SemiBold.ttf */; };
+		29B2CE472802B43900EC9C50 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29B2CE452802B43000EC9C50 /* Poppins-Light.ttf */; };
+		29B2CE492802B47A00EC9C50 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B2CE482802B47A00EC9C50 /* SearchViewController.swift */; };
+		29B2CE4B2802B85600EC9C50 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B2CE4A2802B85500EC9C50 /* RecentSearchCell.swift */; };
 		29BA389C27D9159C00A3DD20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA389B27D9159C00A3DD20 /* LoginViewController.swift */; };
 		29BA389E27D91CF800A3DD20 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA389D27D91CF800A3DD20 /* RegistrationViewController.swift */; };
 		29BA38A027D91E9900A3DD20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA389F27D91E9900A3DD20 /* HomeViewController.swift */; };
@@ -42,6 +46,9 @@
 		29B2CE3F2802A26F00EC9C50 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		29B2CE412802ADF800EC9C50 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		29B2CE432802B14D00EC9C50 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		29B2CE452802B43000EC9C50 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		29B2CE482802B47A00EC9C50 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		29B2CE4A2802B85500EC9C50 /* RecentSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		29BA389B27D9159C00A3DD20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29BA389D27D91CF800A3DD20 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		29BA389F27D91E9900A3DD20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +113,7 @@
 			children = (
 				2989C5F727D7C1A70067B38A /* Poppins-Medium.ttf */,
 				29B2CE3B2802A0A100EC9C50 /* Poppins-SemiBold.ttf */,
+				29B2CE452802B43000EC9C50 /* Poppins-Light.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				29B2CE3F2802A26F00EC9C50 /* CompanyCell.swift */,
+				29B2CE4A2802B85500EC9C50 /* RecentSearchCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -151,6 +160,7 @@
 				29BA389F27D91E9900A3DD20 /* HomeViewController.swift */,
 				29B2CE412802ADF800EC9C50 /* AccountViewController.swift */,
 				29B2CE432802B14D00EC9C50 /* SettingViewController.swift */,
+				29B2CE482802B47A00EC9C50 /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -213,9 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B2CE472802B43900EC9C50 /* Poppins-Light.ttf in Resources */,
 				2989C5EE27D7BAFB0067B38A /* LaunchScreen.storyboard in Resources */,
 				29B2CE37280298D500EC9C50 /* Home.storyboard in Resources */,
 				2989C5F827D7C1A70067B38A /* Poppins-Medium.ttf in Resources */,
+				29B2CE462802B43700EC9C50 /* Poppins-SemiBold.ttf in Resources */,
 				2989C5EB27D7BAFB0067B38A /* Assets.xcassets in Resources */,
 				2989C5E927D7BAF90067B38A /* Main.storyboard in Resources */,
 			);
@@ -230,10 +242,12 @@
 			files = (
 				29B2CE3A28029A9800EC9C50 /* HomeTabBar.swift in Sources */,
 				29B2CE442802B14D00EC9C50 /* SettingViewController.swift in Sources */,
+				29B2CE4B2802B85600EC9C50 /* RecentSearchCell.swift in Sources */,
 				29BA389E27D91CF800A3DD20 /* RegistrationViewController.swift in Sources */,
 				2989C5E627D7BAF90067B38A /* ViewController.swift in Sources */,
 				2989C5FB27D7C8D70067B38A /* UIComponents.swift in Sources */,
 				29B2CE402802A26F00EC9C50 /* CompanyCell.swift in Sources */,
+				29B2CE492802B47A00EC9C50 /* SearchViewController.swift in Sources */,
 				2989C5E227D7BAF90067B38A /* AppDelegate.swift in Sources */,
 				29B2CE422802ADF800EC9C50 /* AccountViewController.swift in Sources */,
 				29BA389C27D9159C00A3DD20 /* LoginViewController.swift in Sources */,

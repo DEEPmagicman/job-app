@@ -2,7 +2,7 @@
 //  CompanyCell.swift
 //  Job-app
 //
-//  Created by Square Infosoft on 10/04/22.
+//  Created by MAC on 10/04/22.
 //
 
 import UIKit
