@@ -9,9 +9,16 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var userNameLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.userNameLbl.text = UserDefault.shared.user?.name ?? ""
     }
     
     @IBAction func onClickEdit(_ sender: Any) {
@@ -20,6 +27,7 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func onClickSignOut(_ sender: Any) {
+        UserDefaults().set(nil, forKey: "userId")
         self.navigationController?.popToRootViewController(animated: true)
     }
 }

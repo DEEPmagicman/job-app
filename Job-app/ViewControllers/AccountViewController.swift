@@ -9,6 +9,7 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var appliedView: UIView!
     @IBOutlet weak var settingView: UIView!
     
@@ -26,6 +27,11 @@ class AccountViewController: UIViewController {
         self.settingView.addGestureRecognizer(tap2)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.userNameLbl.text = UserDefault.shared.user?.name ?? ""
+    }
+    
     @objc private func onClickApplied(sender:UITapGestureRecognizer) {
         
     }
@@ -34,5 +40,4 @@ class AccountViewController: UIViewController {
         let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: String(describing: SettingViewController.self)) as! SettingViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
 }

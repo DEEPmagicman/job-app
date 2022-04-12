@@ -185,7 +185,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,6 +223,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="cDX-5q-YlW"/>
                     <connections>
+                        <outlet property="emailTextField" destination="C8S-Fp-DKg" id="m4N-fu-Fqe"/>
+                        <outlet property="passwordTextField" destination="gWT-8a-Tur" id="rNs-mr-bHp"/>
                         <outlet property="registerHereLbl" destination="0mH-Fe-SOW" id="9hQ-p9-bBw"/>
                     </connections>
                 </viewController>
@@ -321,7 +323,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -337,7 +339,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                 <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -384,7 +386,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="eMg-3a-8Ll"/>
                     <connections>
+                        <outlet property="addressTextView" destination="Qcr-gw-pEP" id="Dyl-YR-Zax"/>
+                        <outlet property="emailTextField" destination="5tY-TB-qhy" id="fM6-cs-UR6"/>
                         <outlet property="loginHereLbl" destination="L0W-sX-Vrs" id="wb2-2U-Gjt"/>
+                        <outlet property="nameTextField" destination="3ie-mk-sef" id="9Fm-rw-Fw4"/>
+                        <outlet property="passwordTextField" destination="dXj-ts-WN7" id="hG4-L6-HiA"/>
+                        <outlet property="phoneTextField" destination="wEa-X0-chr" id="bWs-Yn-aEc"/>
+                        <outlet property="rePasswordTextField" destination="qk5-rY-8zg" id="9To-5v-4y5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vv-4V-SRr" sceneMemberID="firstResponder"/>
