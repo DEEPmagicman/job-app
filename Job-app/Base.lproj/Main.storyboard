@@ -28,11 +28,11 @@
                                     <constraint firstAttribute="height" constant="311" id="pJV-g0-9h6"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JxE-UF-hyg">
-                                <rect key="frame" x="32" y="699" width="311" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JxE-UF-hyg">
+                                <rect key="frame" x="32" y="638" width="311" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb8-Mo-d02" customClass="PrimaryButton" customModule="Job_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="47.666666666666664"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                         <color key="tintColor" name="PrimaryColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -55,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkB-tB-rUJ" customClass="PrimaryButton" customModule="Job_app" customModuleProvider="target">
-                                        <rect key="frame" x="163" y="0.0" width="148" height="50"/>
+                                        <rect key="frame" x="0.0" y="62.666666666666629" width="311" height="47.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                         <color key="tintColor" name="PrimaryColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -79,7 +79,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NUe-gZ-Xw5"/>
+                                    <constraint firstAttribute="height" constant="110" id="NUe-gZ-Xw5"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -87,10 +87,10 @@
                         <color key="backgroundColor" name="PrimaryBackground"/>
                         <constraints>
                             <constraint firstItem="5Dd-Gu-BTa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="6Qo-Sw-G7o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JxE-UF-hyg" secondAttribute="bottom" constant="30" id="7Tm-cG-HKA"/>
                             <constraint firstItem="5Dd-Gu-BTa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BkK-tJ-khL"/>
                             <constraint firstItem="JxE-UF-hyg" firstAttribute="leading" secondItem="5Dd-Gu-BTa" secondAttribute="leading" id="E5C-9k-sbq"/>
                             <constraint firstItem="JxE-UF-hyg" firstAttribute="trailing" secondItem="5Dd-Gu-BTa" secondAttribute="trailing" id="fCC-bE-c8p"/>
-                            <constraint firstItem="JxE-UF-hyg" firstAttribute="top" secondItem="5Dd-Gu-BTa" secondAttribute="bottom" constant="200" id="fsf-H1-4RC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pai-9G-fbf"/>
@@ -195,21 +195,36 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Registered? Register Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mH-Fe-SOW">
+                                <rect key="frame" x="31.666666666666657" y="542" width="312" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="KD0-1l-DfP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="PrimaryGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yv2-rT-a9M"/>
                         <color key="backgroundColor" name="PrimaryBackground"/>
                         <constraints>
                             <constraint firstItem="rQm-ma-8Ad" firstAttribute="trailing" secondItem="GXo-13-TGE" secondAttribute="trailing" id="6AT-Uc-uMr"/>
                             <constraint firstItem="rQm-ma-8Ad" firstAttribute="leading" secondItem="GXo-13-TGE" secondAttribute="leading" id="9Wa-gA-S82"/>
+                            <constraint firstItem="0mH-Fe-SOW" firstAttribute="trailing" secondItem="rQm-ma-8Ad" secondAttribute="trailing" id="Dy0-Cz-hCE"/>
                             <constraint firstItem="rQm-ma-8Ad" firstAttribute="top" secondItem="GXo-13-TGE" secondAttribute="bottom" constant="100" id="FIE-Fq-HYX"/>
                             <constraint firstItem="Yv2-rT-a9M" firstAttribute="bottom" secondItem="Eup-EH-ClV" secondAttribute="bottom" constant="126" id="Npz-z4-ulC"/>
                             <constraint firstItem="Eup-EH-ClV" firstAttribute="centerX" secondItem="rQm-ma-8Ad" secondAttribute="centerX" id="PS1-xX-l3l"/>
+                            <constraint firstItem="0mH-Fe-SOW" firstAttribute="top" secondItem="rQm-ma-8Ad" secondAttribute="bottom" constant="4" id="Tjg-Cv-Csd"/>
                             <constraint firstItem="GXo-13-TGE" firstAttribute="centerX" secondItem="4Ph-D4-ehT" secondAttribute="centerX" id="j1Q-Ax-7Ei"/>
                             <constraint firstItem="Eup-EH-ClV" firstAttribute="leading" secondItem="Yv2-rT-a9M" secondAttribute="leading" constant="132" id="ofU-U5-LK2"/>
+                            <constraint firstItem="0mH-Fe-SOW" firstAttribute="leading" secondItem="rQm-ma-8Ad" secondAttribute="leading" id="wNh-jm-mDd"/>
                             <constraint firstItem="GXo-13-TGE" firstAttribute="top" secondItem="Yv2-rT-a9M" secondAttribute="top" constant="60" id="zOV-rc-0PG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cDX-5q-YlW"/>
+                    <connections>
+                        <outlet property="registerHereLbl" destination="0mH-Fe-SOW" id="9hQ-p9-bBw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LxC-Xd-6TN" sceneMemberID="firstResponder"/>
             </objects>
@@ -401,7 +416,7 @@
             <color red="0.31799998879432678" green="0.70999997854232788" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PrimaryGray">
-            <color red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.76899999380111694" green="0.76899999380111694" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
