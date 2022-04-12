@@ -1,0 +1,6 @@
+framework module Pods_Job_app {
+  umbrella header "Pods-Job-app-umbrella.h"
+
+  export *
+  module * { export * }
+}
